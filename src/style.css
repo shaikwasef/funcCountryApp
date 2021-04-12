@@ -1,0 +1,48 @@
+body{
+  position: relative;
+  top: 50px;
+  background: #00ffb3 ;
+  display: flex;
+  flex-direction: row;
+  align-items : center ;
+  justify-content : center; 
+}
+.container{
+  display : flex ;
+  flex-direction : column;
+  align-items: center;
+  row-gap : 40px;
+  width : 400px;
+}
+.resultDisplay{
+  border : 2px solid black;
+  border-bottom : none ;
+  /* line-height: 50px;  */
+}
+.population{
+  border-bottom : 2px solid black;
+}
+.partition{
+  display : grid ;
+  grid-template-columns: 150px auto ;
+  align-items : center ;
+}
+
+.image{
+  height : 100%;
+  width : inherit;
+}
+
+.displayBox{
+  height : 500px ;
+  width : inherit;
+  display : grid ;
+  grid-template-rows :  250px 50px 50px 50px 50px;
+  grid-template-areas : 
+  "flag"
+  "name"
+  "capital"
+  "region"
+  "subregion"
+  "population";
+}
